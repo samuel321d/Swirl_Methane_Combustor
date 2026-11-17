@@ -67,8 +67,24 @@ plt.colorbar(label = "Intensity")
 plt.xlabel("x pixels")
 plt.ylabel("y pixels")
 plt.title("Average intensity from BackGround frames")
+# plt.show()
+
+cut_ref_prom = ref_prom[50:200, 50:200]
+
+plt.figure(figsize = (10,6))
+plt.imshow(cut_ref_prom, cmap = "gray", origin = "lower")
+plt.colorbar(label = "Intensity")
+plt.xlabel("x pixels")
+plt.ylabel("y pixels")
+plt.title("Average intensity from BackGround frames")
 plt.show()
+
+
+
 """
+
+
+
 fig, ax = plt.subplots(2, 3, figsize=(14, 8))
 
 frames = [0, 10, 20, 30, 40, 49]
